@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1b0000;
+    display: grid;
+    place-items: center;
+}
+
+ul{
+    display: flex;
+    border-bottom: 10px solid rgb(54 , 54 , 54);
+}
+
+ul li{
+    width: 40px;
+    height: 40px;
+    list-style: none;
+    background-color: #f57c00;
+    margin: auto 20px;
+    border-radius: 50%;
+    animation: Bounce 0.7s linear infinite;
+}
+
+@keyframes Bounce {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+ul .a{
+    animation-delay: 0.2s;
+}
+ul .b{
+    animation-delay: 0.4s;
+}
+ul .c{
+    animation-delay: 0.6s;
+}
+ul .d{
+    animation-delay: 0.8s;
+}
+ul .e{
+    animation-delay: 1s;
+}
+ul .f{
+    animation-delay: 1.2s;
+}
