@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #042104;
+    animation: animateThat 8s linear infinite;
+}
+
+@keyframes animateThat {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+section .css-loader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+section .css-loader span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(calc(18deg * var(--i)));
+}
+
+section .css-loader span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: #00ffae;
+    box-shadow: 0 0 10px #00ffae ,
+    0 0 20px #00ffae ,
+    0 0 6px #00ffae ,
+    0 0 100px #00ffae ,
+    0 0 140px #00ffae ,
+    0 0 180px #00ffae ;
+
+    border-radius: 50%;
+    animation: animateThis 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animateThis {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
